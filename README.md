@@ -14,6 +14,15 @@ Our theoretical results enable *ScoreFlow*, a continuous normalizing flow model 
 
 ### Dependencies
 
+Run the following on Google Colab
+```sh
+!git clone https://github.com/yichen96/score_flow.git
+!python -m pip install --upgrade pip
+!pip3 install --upgrade jax jaxlib>=0.1.69+cuda${CUDA/./} -f https://storage.googleapis.com/jax-releases/jax_releases.html
+!python -m pip install --user -r score_flow/requirements.txt
+!python -m pip cache purge
+```
+
 Run the following to install a subset of necessary python packages for our code
 ```sh
 pip install -r requirements.txt
